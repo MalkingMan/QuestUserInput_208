@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 
-Fun FormDataDiri(modifier : Modifier
+fun FormDataDiri(modifier : Modifier
 ){
     var textNama by remember { mutableStateOf(value ="") }
     var textAlamat by remember { mutableStateOf(value="") }
@@ -97,7 +97,29 @@ Fun FormDataDiri(modifier : Modifier
             jenis = textJK
             alamat = textAlamat
         }
+
+    ){
+    Text(text = stringResource(id = R.string.submit))
+    }
+
+
+    HorizontalDivider(
+        modifier = Modifier.padding(
+            buttom = dimensionResource(30dp),
+            top = dimensionResource(
+                id = R.dimen.padding_medium
+            )),
+        thickness = dimensionResource(1dp),
+        color = Color.DarkGray
     )
+
+    ElevatedCard(
+        elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.Black),
+
+
+
+
 
 
 
