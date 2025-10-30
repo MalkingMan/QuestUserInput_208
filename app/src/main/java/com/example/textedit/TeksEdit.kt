@@ -82,7 +82,7 @@ Fun FormDataDiri(modifier : Modifier
         modifier = Modifier.padding(
         buttom = dimensionResource(30dp),
         top = dimensionResource(
-            id = 30dp
+            id = R.dimen.padding_medium
         )),
     )
 
