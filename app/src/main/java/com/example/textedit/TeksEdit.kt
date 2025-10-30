@@ -1,6 +1,7 @@
 package com.example.textedit
 
 import android.R
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import ....
@@ -21,7 +22,12 @@ Fun FormDataDiri(modifier : Modifier
 
     Column(modifier = modifier.padding(top 50,dp),
         verticalArrangement = Arrangement.Top,
-        horizontal
+        horizontalAlignment = Alignment.CenterHorizontally {
+             OutlinedTextField(
+                 value = textNama,
+                 singleLine = true,
+             )
+        }
 
     )
 }
