@@ -30,11 +30,23 @@ Fun FormDataDiri(modifier : Modifier
                  shape = MaterialTheme.shapes.large,
                  modifier = Modifier.fillMaxWidth(widht = 250.dp),
                  label = {Text(text = "Nama Lengkap")},
-                 onValueChange = {textNama = it),
-                    textNama = it
+                 onValueChange = {
+                     textNama = it
+                 }
+
              )
         }
 
     )
+
+    Row{
+        gender.forEach { item ->
+            Row(modifier = Modifier.selectable(
+                selected = textJK == item,
+                onClick = {
+                    selectedValue = item
+                    onSelectionChanged(item)
+                })
+
 }
 
