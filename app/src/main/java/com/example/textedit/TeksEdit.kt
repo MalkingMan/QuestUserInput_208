@@ -79,10 +79,11 @@ Fun FormDataDiri(modifier : Modifier
     )
 
     HorizontalDivider(
-        modifier = Modifier.padding(button = dimensionResource(30dp),top = dimensionResource(
+        modifier = Modifier.padding(
+        buttom = dimensionResource(30dp),
+        top = dimensionResource(
             id = 30dp
         )),
-        thickness = dimensionResource(id = 1.dp)
     )
 
 
