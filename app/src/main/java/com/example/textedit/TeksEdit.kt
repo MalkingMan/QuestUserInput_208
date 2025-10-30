@@ -4,6 +4,7 @@ import android.R
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.unit.dp
 import ....
 
 @Composable
@@ -26,6 +27,11 @@ Fun FormDataDiri(modifier : Modifier
              OutlinedTextField(
                  value = textNama,
                  singleLine = true,
+                 shape = MaterialTheme.shapes.large,
+                 modifier = Modifier.fillMaxWidth(widht = 250.dp),
+                 label = {Text(text = "Nama Lengkap")},
+                 onValueChange = {textNama = it),
+                    textNama = it
              )
         }
 
