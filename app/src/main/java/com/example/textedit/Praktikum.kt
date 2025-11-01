@@ -71,4 +71,7 @@ fun Praktikum(modifier: Modifier = Modifier) {
                         .fillMaxWidth(),
                     horizontalAlignment = Alignment.Start
                 ) {
+                    Text(text = "NAMA LENGKAP", fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                    OutlinedTextField(
+                        value = nama,
 
