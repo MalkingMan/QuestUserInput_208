@@ -74,4 +74,9 @@ fun Praktikum(modifier: Modifier = Modifier) {
                     Text(text = "NAMA LENGKAP", fontWeight = FontWeight.Bold, fontSize = 14.sp)
                     OutlinedTextField(
                         value = nama,
+                        onValueChange = { nama = it },
+                        placeholder = { Text("Isian nama lengkap") },
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true
+                    )
 
