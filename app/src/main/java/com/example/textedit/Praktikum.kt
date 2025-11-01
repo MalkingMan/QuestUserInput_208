@@ -46,3 +46,12 @@ fun Praktikum(modifier: Modifier = Modifier) {
                     .padding(vertical = 25.dp),
                 contentAlignment = Alignment.BottomStart
             ) {
+                Text(
+                    text = "Formulir Pendaftaran",
+                    color = Color.White,
+                    fontSize = 29.sp,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.padding(start = 16.dp, bottom = 8.dp)
+                )
+            }
+
