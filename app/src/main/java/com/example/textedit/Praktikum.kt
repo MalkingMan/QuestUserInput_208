@@ -43,7 +43,8 @@ fun Praktikum(modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .background(Color(0xFFBA68C8))
-                    .padding(vertical = 25.dp),
+                    // 1. Ganti padding dengan height() untuk tinggi yang lebih pasti dan besar
+                    .height(120.dp), // Coba nilai 120.dp atau sesuaikan
                 contentAlignment = Alignment.BottomStart
             ) {
                 Text(
@@ -51,9 +52,11 @@ fun Praktikum(modifier: Modifier = Modifier) {
                     color = Color.White,
                     fontSize = 29.sp,
                     fontWeight = FontWeight.Medium,
-                    modifier = Modifier.padding(start = 16.dp, bottom = 8.dp)
+                    // 2. Padding pada teks dipertahankan agar ada jarak dari tepi
+                    modifier = Modifier.padding(start = 16.dp, bottom = 12.dp)
                 )
             }
+
             Spacer(modifier = Modifier.height(24.dp))
 
 
