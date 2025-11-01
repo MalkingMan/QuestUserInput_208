@@ -39,3 +39,10 @@ fun Praktikum(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color(0xFFBA68C8))
+                    .padding(vertical = 25.dp),
+                contentAlignment = Alignment.BottomStart
+            ) {
