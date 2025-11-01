@@ -121,4 +121,40 @@ fun Praktikum(modifier: Modifier = Modifier) {
                             Text(text = item)
                         }
                     }
+                    Spacer(modifier = Modifier.height(20.dp))
+
+
+                    Text(text = "ALAMAT", fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                    OutlinedTextField(
+                        value = alamat,
+                        onValueChange = { alamat = it },
+                        placeholder = { Text("Alamat") },
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true
+                    )
+
+                    Spacer(modifier = Modifier.height(24.dp))
+
+                    Button(
+                        onClick = { },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(48.dp),
+                        shape = RoundedCornerShape(30.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = Color(0xFF3F51B5)
+                        )
+                    ) {
+                        Text(
+                            text = "Submit",
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 16.sp
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
 
