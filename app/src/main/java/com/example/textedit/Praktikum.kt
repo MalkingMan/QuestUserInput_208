@@ -54,4 +54,6 @@ fun Praktikum(modifier: Modifier = Modifier) {
                     modifier = Modifier.padding(start = 16.dp, bottom = 8.dp)
                 )
             }
+            Spacer(modifier = Modifier.height(24.dp))
+
 
