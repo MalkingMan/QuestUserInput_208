@@ -24,3 +24,18 @@ fun Praktikum(modifier: Modifier = Modifier) {
 
     val listGender = listOf("Laki-laki", "Perempuan")
     val listStatus = listOf("Janda", "Lajang", "Duda")
+
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(Color(0xFFF3C5F8), Color.White)
+                )
+            ),
+        contentAlignment = Alignment.TopCenter
+    ) {
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
