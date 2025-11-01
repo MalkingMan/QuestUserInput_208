@@ -65,3 +65,10 @@ fun Praktikum(modifier: Modifier = Modifier) {
                     .fillMaxWidth(0.92f)
                     .wrapContentHeight()
             ) {
+                Column(
+                    modifier = Modifier
+                        .padding(horizontal = 20.dp, vertical = 24.dp)
+                        .fillMaxWidth(),
+                    horizontalAlignment = Alignment.Start
+                ) {
+
