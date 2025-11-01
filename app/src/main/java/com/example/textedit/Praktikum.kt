@@ -101,3 +101,16 @@ fun Praktikum(modifier: Modifier = Modifier) {
                         }
                     }
 
+                    Spacer(modifier = Modifier.height(20.dp))
+
+                    Text(text = "STATUS PERKAWINAN", fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                    listStatus.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = (status == item),
+                                    onClick = { status = item }
+                                )
+                                .padding(vertical = 4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
