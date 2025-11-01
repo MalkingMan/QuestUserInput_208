@@ -161,3 +161,5 @@ fun Praktikum(modifier: Modifier = Modifier) {
     }
 }
 
+
+
