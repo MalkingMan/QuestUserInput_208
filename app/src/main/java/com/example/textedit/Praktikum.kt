@@ -82,4 +82,14 @@ fun Praktikum(modifier: Modifier = Modifier) {
 
                     Spacer(modifier = Modifier.height(20.dp))
 
-
+                    Text(text = "JENIS KELAMIN", fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                    listGender.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = (jenisKelamin == item),
+                                    onClick = { jenisKelamin = item }
+                                )
+                                .padding(vertical = 4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
