@@ -93,3 +93,11 @@ fun Praktikum(modifier: Modifier = Modifier) {
                                 .padding(vertical = 4.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
+                            RadioButton(
+                                selected = (jenisKelamin == item),
+                                onClick = { jenisKelamin = item }
+                            )
+                            Text(text = item)
+                        }
+                    }
+
