@@ -14,3 +14,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
+@Composable
+fun Praktikum(modifier: Modifier = Modifier) {
+    var nama by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("") }
+    var status by remember { mutableStateOf("") }
+
+    val listGender = listOf("Laki-laki", "Perempuan")
+    val listStatus = listOf("Janda", "Lajang", "Duda")
