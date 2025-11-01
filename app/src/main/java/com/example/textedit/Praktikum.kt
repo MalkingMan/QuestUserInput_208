@@ -114,3 +114,11 @@ fun Praktikum(modifier: Modifier = Modifier) {
                                 .padding(vertical = 4.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
+                            RadioButton(
+                                selected = (status == item),
+                                onClick = { status = item }
+                            )
+                            Text(text = item)
+                        }
+                    }
+
