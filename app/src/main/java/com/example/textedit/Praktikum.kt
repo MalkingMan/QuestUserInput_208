@@ -80,3 +80,6 @@ fun Praktikum(modifier: Modifier = Modifier) {
                         singleLine = true
                     )
 
+                    Spacer(modifier = Modifier.height(20.dp))
+
+
