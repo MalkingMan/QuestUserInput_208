@@ -57,3 +57,11 @@ fun Praktikum(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(24.dp))
 
 
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                modifier = Modifier
+                    .fillMaxWidth(0.92f)
+                    .wrapContentHeight()
+            ) {
